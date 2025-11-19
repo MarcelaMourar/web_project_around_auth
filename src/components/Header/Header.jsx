@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
 
-function Header () {
+function Header ({ loggedIn, onLogout }) {
     return(
         <header className="header">
         <img
@@ -8,9 +9,19 @@ function Header () {
           alt="imagem da logo"
           className="header__logo"
         />
-      </header>
-
-    );
+        <div className="header__auth">
+        {loggedIn ? (
+          <button className="header__logout" onClick={onLogout}>
+            Sair
+          </button>
+        ) : (
+          <Link className="header__link" to="/signin">
+            Faça o login
+          </Link>
+        )}
+      </div>
+    </header>
+  );
 }
 
 export default Header;

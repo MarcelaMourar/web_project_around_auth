@@ -3,12 +3,21 @@
   height: 74px;
   margin: 0 auto;
   border-bottom: 1px solid rgba(84, 84, 84, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
   margin: 0 auto 41px 0;
   max-width: 173px;
   height: 33px;
+}
+
+.header__link {
+  color: white;       
+  text-decoration: none; 
+  font-size: 18px;
 }
 
 @media screen and (max-width: 880px) {

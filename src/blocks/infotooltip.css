@@ -1,0 +1,35 @@
+.tooltip {
+   
+}
+
+.tooltip_content {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 358px;
+height: 17px;
+margin: 20px auto 0 auto;
+}
+
+.tooltip_opened {
+ 
+
+}
+
+.tooltip__content {
+    
+
+  
+}
+
+.tooltip__icon {
+ 
+}
+
+.tooltip__icon_success {
+
+}
+
+.tooltip__icon_error {
+  
+}
