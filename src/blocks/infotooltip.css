@@ -1,35 +1,72 @@
 .tooltip {
-   
-}
-
-.tooltip_content {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.6);
 display: flex;
 justify-content: center;
 align-items: center;
-width: 358px;
-height: 17px;
-margin: 20px auto 0 auto;
-}
-
-.tooltip_opened {
- 
-
+opacity: 0;
+pointer-events: none;
+transition: opacity 0.3s;
 }
 
 .tooltip__content {
-    
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+position: relative;
+background: white;
+border-radius: 12px;
+width: 430px;
+height: 330px;
+margin: 20px auto 0 auto;
+}
+.tooltip__close {
+background-image: url("../images/CloseIcon.png");
+position: absolute;
+width: 40px;
+height: 40px;
+border: none;
+background-size: contain;
+top: -40px;
+right: -40px;
+background-color: transparent;
+}
 
-  
+.tooltip_opened {
+opacity: 1;
+pointer-events: auto;
 }
 
 .tooltip__icon {
- 
+width: 70px;
+height: 70px;
+margin: 0 auto 20px;
+background-size: cover;
+}
+
+
+.tooltip__message{
+color: black;
+width: 358px;
+height: 58px;
+font-weight: 900;
+font-size: 24px;
+text-align: center;
 }
 
 .tooltip__icon_success {
-
+background-image: url("../images/autorizaçao.png");
+width: 120px;
+height: 120px;
 }
 
 .tooltip__icon_error {
-  
+background-image: url("../images/negaçao.png");
+width: 120px;
+height: 120px;
 }

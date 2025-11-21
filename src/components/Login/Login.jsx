@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../../blocks/auth.css";
 
 
@@ -38,7 +39,7 @@ function Login({ handleLogin }) {
           Entrar
         </button>
          <p className="auth__text">
-        Ainda não é  membro? <a href="/signin" className="auth__link">Inscreva-se aqui!</a>
+        Ainda não é  membro? <Link to="/signup" className="auth__link">Inscreva-se aqui!</Link>
         </p>
       </form>
     </section>

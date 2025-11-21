@@ -187,7 +187,8 @@ function handleLogin(email, password) {
         />
       </Routes>
 
-      <InfoTooltip status={tooltipStatus} />
+      <InfoTooltip status={tooltipStatus}
+      onClose={() => setTooltipStatus(null)} />
     </CurrentUserContext.Provider>
   );
 }
