@@ -92,13 +92,13 @@
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 25px;
-   width: 120%;
+   width: 100%;
    padding: 10px 0;
 }
 .popup__input_job {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-   width: 120%;
+   width: 100%;
   padding: 10px 0;
 }
 .popup__save-button {
@@ -170,6 +170,10 @@
 
 .popup__error_visible {
   visibility: visible;
+}
+
+.popup__label {
+  width: 100%;
 }
 
 @media screen and (max-width: 320px) {

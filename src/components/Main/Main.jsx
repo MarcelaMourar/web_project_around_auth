@@ -6,7 +6,7 @@ import EditAvatar from "../EditAvatar/EditAvatar.jsx";
 import caneta from "../../images/caneta.png";
 import vector from "../../images/Vector(1).png";
 import Card from "../Cards/Card.jsx"
-import RemoveCard from "../removeCard/RemoveCard.jsx";
+import RemoveCard from "../RemoveCard/RemoveCard.jsx";
 import CurrentUserContext from "../../contexts/CurrentUserContext.js";
 
 export default function Main({
